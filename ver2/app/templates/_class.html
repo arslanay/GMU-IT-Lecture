@@ -1,0 +1,12 @@
+<table class="coursetable">
+    <tr>
+        <td width="60%"> {{ class.major }} {{ class.coursenum}} - {{ class.title }}  </td>
+        <td width="20%">
+            Enroll/UnEnroll
+        </td>
+        <td width="20%">
+            <a href="{{ url_for('roster',classid = class.id) }}">  {{ class.major }} {{ class.coursenum}} Roster </a>
+        </td>
+    </tr>
+
+    </table>
